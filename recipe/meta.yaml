@@ -1,4 +1,4 @@
-{% set version = "1.3.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: mock
@@ -7,7 +7,7 @@ package:
 source:
   fn: mock-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/m/mock/mock-{{ version }}.tar.gz
-  md5: 73ee8a4afb3ff4da1b4afa287f39fdeb
+  md5: 0febfafd14330c9dcaa40de2d82d40ad
 
 build:
   number: 0
