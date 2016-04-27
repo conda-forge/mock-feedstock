@@ -5,7 +5,7 @@ Home: https://github.com/testing-cabal/mock
 
 Package license: BSD 2-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A library for testing in Python.
 
