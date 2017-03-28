@@ -7,7 +7,7 @@ package:
 source:
   fn: mock-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/m/mock/mock-{{ version }}.tar.gz
-  md5: 73ee8a4afb3ff4da1b4afa287f39fdeb
+  sha256: 1e247dbecc6ce057299eb7ee019ad68314bb93152e81d9a6110d35f4d5eca0f6
 
 build:
   number: 0
@@ -16,15 +16,15 @@ build:
 requirements:
   build:
     - python
-    - setuptools
+    - setuptools >=17.1,<=33.1.1
     - funcsigs    # [py<33]
-    - pbr
+    - pbr >=1.3
     - six
 
   run:
     - python
     - funcsigs    # [py<33]
-    - pbr
+    - pbr >=1.3
     - six
 
 test:
@@ -33,8 +33,11 @@ test:
 
 about:
   home: https://github.com/testing-cabal/mock
+  license_file: LICENSE.txt
   license: BSD 2-Clause
   summary: A library for testing in Python.
+  dev_url: https://github.com/testing-cabal/mock
+  doc_url: https://docs.python.org/dev/library/unittest.mock.html
 
 extra:
   recipe-maintainers:
