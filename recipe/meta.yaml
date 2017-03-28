@@ -33,8 +33,11 @@ test:
 
 about:
   home: https://github.com/testing-cabal/mock
+  license_file: LICENSE.txt
   license: BSD 2-Clause
   summary: A library for testing in Python.
+  dev_url: https://github.com/testing-cabal/mock
+  doc_url: https://docs.python.org/dev/library/unittest.mock.html
 
 extra:
   recipe-maintainers:
