@@ -9,7 +9,7 @@ source:
   md5: 0febfafd14330c9dcaa40de2d82d40ad
 
 build:
-  number: 0
+  number: 1000
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
