@@ -10,7 +10,13 @@ source:
 
 build:
   number: 1001
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script:
+    ###########################################################
+    # Delete broken symlink, which causes build to fail.      #
+    # xref: https://github.com/testing-cabal/mock/issues/446  #
+    ###########################################################
+    - del /q docs\\changelog.txt  # [win and py27]
+    - "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
