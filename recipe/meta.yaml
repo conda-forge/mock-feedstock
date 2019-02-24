@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.python.org/packages/source/m/mock/mock-{{ version }}.tar.gz
-  md5: 0febfafd14330c9dcaa40de2d82d40ad
+  sha256: b158b6df76edd239b8208d481dc46b6afd45a846b7812ff0ce58971cf5bc8bba
 
 build:
   number: 1001
