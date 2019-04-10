@@ -1,4 +1,4 @@
-{% set version = "1.3.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: mock
@@ -7,14 +7,14 @@ package:
 source:
   fn: mock-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/m/mock/mock-{{ version }}.tar.gz
-  md5: 73ee8a4afb3ff4da1b4afa287f39fdeb
+  sha256: b839dd2d9c117c701430c149956918a423a9863b48b09c90e30a6013e7d2f44f
 
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - funcsigs    # [py<33]
