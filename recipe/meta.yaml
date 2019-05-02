@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "3.0.2" %}
 
 package:
   name: mock
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.python.org/packages/source/m/mock/mock-{{ version }}.tar.gz
-  sha256: b158b6df76edd239b8208d481dc46b6afd45a846b7812ff0ce58971cf5bc8bba
+  sha256: a209c68c921778e55116c001ac1b13f4c45a87c8eb770008b10ea3aeaca7fd5b
 
 build:
-  number: 1001
+  number: 0
   script:
     ###########################################################
     # Delete broken symlink, which causes build to fail.      #
