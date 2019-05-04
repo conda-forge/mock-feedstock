@@ -1,4 +1,4 @@
-{% set version = "3.0.3" %}
+{% set version = "3.0.4" %}
 
 package:
   name: mock
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.python.org/packages/source/m/mock/mock-{{ version }}.tar.gz
-  sha256: 5eda46efb363128828d6fd2bf8d16f6ebb66f5b543b9f7f8f4eb224c5cb503fe
+  sha256: 7868db2825a1563578869d4a011a036503a2f1d60f9ff9dd1e3205cd6e25fcec
 
 build:
   number: 0
