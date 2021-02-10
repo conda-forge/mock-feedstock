@@ -9,14 +9,8 @@ source:
   sha256: b158b6df76edd239b8208d481dc46b6afd45a846b7812ff0ce58971cf5bc8bba
 
 build:
-  number: 1001
-  script:
-    ###########################################################
-    # Delete broken symlink, which causes build to fail.      #
-    # xref: https://github.com/testing-cabal/mock/issues/446  #
-    ###########################################################
-    - del /q docs\\changelog.txt  # [win and py27]
-    - "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 1002
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -36,7 +30,7 @@ test:
 
 about:
   home: https://github.com/testing-cabal/mock
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_file: LICENSE.txt
   summary: A library for testing in Python
 
