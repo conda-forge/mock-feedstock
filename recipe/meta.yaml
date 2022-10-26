@@ -9,19 +9,16 @@ source:
   sha256: 7d3fbbde18228f4ff2f1f119a45cdffa458b4c0dee32eb4d2bb2f82554bac7bc
 
 build:
-  number: 3
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 4
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python
+    - python >=3.8
     - pip
   run:
-    - python
-    - funcsigs    # [py<33]
+    - python >=3.8
     - six
 
 test:
