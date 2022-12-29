@@ -1,3 +1,4 @@
+{% set name = "mock" %}
 {% set version = "5.0.0" %}
 
 package:
@@ -5,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.python.org/packages/source/m/mock/mock-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mock-{{ version }}.tar.gz
   sha256: fd552787228eb2ab8352f270470fa93c9ad8b9cbc565c5558ee3faed8edb3853
 
 build:
@@ -26,10 +27,11 @@ test:
     - mock
 
 about:
-  home: https://github.com/testing-cabal/mock
+  home: http://mock.readthedocs.org/en/latest/
+  summary: Rolling backport of unittest.mock for all Pythons
+  dev_url: https://github.com/testing-cabal/mock
   license: BSD-2-Clause
   license_file: LICENSE.txt
-  summary: A library for testing in Python
 
 extra:
   recipe-maintainers:
