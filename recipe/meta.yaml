@@ -1,5 +1,5 @@
 {% set name = "mock" %}
-{% set version = "5.0.0" %}
+{% set version = "5.0.1" %}
 
 package:
   name: mock
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mock-{{ version }}.tar.gz
-  sha256: fd552787228eb2ab8352f270470fa93c9ad8b9cbc565c5558ee3faed8edb3853
+  sha256: e3ea505c03babf7977fd21674a69ad328053d414f05e6433c30d8fa14a534a6b
 
 build:
   number: 0
