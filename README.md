@@ -1,11 +1,11 @@
-About mock
-==========
+About mock-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mock-feedstock/blob/main/LICENSE.txt)
 
 Home: http://mock.readthedocs.org/en/latest/
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mock-feedstock/blob/main/LICENSE.txt)
 
 Summary: Rolling backport of unittest.mock for all Pythons
 
